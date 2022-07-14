@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./getData.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Get Data</h1>
+        <ul id="data" class="section">        
+        </ul>
+        <div class="popup-window-wrraper" id="openpopup">
+            <div class="popup-window">
+                <div class="content-popup">
+                    <div class="image-block">
+                        <span class="image-circle">
+                            <img src="https://assets.fastexpert.com/fastexpert-users-profiles-photos/thumb/8404_thumb_300.jpg" alt="Chris Cooke">
+                        </span>
+                        <label>Chris Cooke</label>
+                    </div>
+                    <div class="details">
+                        <h2>Are you buying or selling a property?</h2>
+                        <div class="top-block">
+                            <label>
+                                <input type="radio" name="check" />
+                                <span>Buying</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="check" checked />
+                                <span>Selling</span>
+                            </label>
+                        </div>
+                        <div class="form-section">
+                            <div class="box address">
+                                <label for="address">Address</label>
+                                <input type="text" placeholder="Street" name="address" id="address">
+                            </div>
+                            <div class="box unit">
+                                <label for="unit">Unit #</label>
+                                <input type="text" placeholder="Unit" name="unit" id="unit">
+                            </div>
+                            <div class="box city">
+                                <label for="city">City</label>
+                                <input type="text" placeholder="City" name="city" id="city">
+                            </div>
+                            <div class="box state">
+                                <label for="state">State</label>
+                                <select name="state" id="state">
+                                    <option value="">1212</option>
+                                    <option value="">121</option>
+                                    <option value="">1221</option>
+                                    <option value="">12121</option>
+                                    <option value="">1212</option>
+                                </select>
+                            </div>
+                            <div class="box zipcode">
+                                <label for="zipcode">Zipcode</label>
+                                <input type="text" placeholder="Zipcode" name="zipcode" id="zipcode">
+                            </div>
+                            <div class="button-section">
+                                <button class="button">Next</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <span class="close-btn" onclick="onClose()" id="closepopup">X</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
